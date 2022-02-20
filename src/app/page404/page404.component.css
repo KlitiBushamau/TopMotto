@@ -1,0 +1,15 @@
+.main {
+    margin-top: 96px;
+    height: calc(100vh - 96px);
+  }
+
+  h1 {
+    padding-top: 150px;
+    font-style: normal;
+    font-size: 11.25rem;
+  }
+
+  p {
+    max-width: 570px;
+    margin: 0 auto;
+  }

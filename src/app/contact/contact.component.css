@@ -1,0 +1,139 @@
+.contact-page {
+    height: calc(100vh - 96px);
+    margin-top: 96px;
+    padding: 70px 0;
+    --gap: 80px;
+  }
+  
+  .contact-page > div {
+    justify-content: space-between;
+  }
+  
+  .contact-page-info {
+    width: 420px;
+  }
+  
+  .contact-page-info div {
+    padding: 1.5rem;
+    background-color: var(--clr-gray-100);
+  }
+  
+  .contact-page-info div:first-of-type {
+    margin-bottom: 25px;
+  }
+  
+  .form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%;
+  }
+  
+  .form-item {
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .form-item label {
+    position: absolute;
+    font-size: calculateRem(20px);
+    font-weight: 400;
+    left: 0;
+    top: 22px;
+    transform: translateY(-50%);
+    cursor: text;
+    transition: 0.3s all;
+    color: var(--clr-gray);
+    user-select: none;
+  }
+  
+  .form-item input,
+  .form-item textarea {
+    width: 100%;
+    padding: 10px 0;
+    line-height: 1.2;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid rgba(146, 151, 158, 0.4);
+    appearance: none;
+    transition: 0.3s all;
+  }
+  
+  .form-item textarea {
+    resize: none;
+  }
+  
+  .form-item input:focus,
+  .form-item textarea:focus {
+    outline: none;
+    border-bottom: 1px solid var(--clr-yellow);
+  }
+  
+  .form-item input:focus + label,
+  .form-item textarea:focus + label {
+    top: -10px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: default;
+    transition: 0.3s all;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 30px;
+  }
+  
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:before {
+    content: "";
+    font-size: 15px;
+    color: transparent !important;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--clr-gray);
+    border-radius: 3px;
+  }
+  
+  input[type="checkbox"]:checked:before {
+    background: black !important;
+  }
+  
+  input[type="submit"] {
+    padding: 15px 0;
+    background-color: var(--clr-yellow);
+    border: none;
+    outline: none;
+    margin-top: 50px;
+    width: 280px;
+    color: var(--clr-dark);
+  }
+  
+  @media (max-width: 768px) {
+    .contact-page .container {
+      flex-direction: column;
+      padding: 0 30px;
+    }
+  
+    .contact-page-info {
+      width: unset;
+    }
+  
+    .form-group {
+      grid-template-columns: 1fr;
+    }
+  }

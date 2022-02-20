@@ -1,0 +1,206 @@
+@import "~swiper/swiper-bundle";
+
+:root {
+  --clr-dark: #464c59;
+  --clr-dark-700: #3e3e3e;
+  --clr-dark-900: #333233;
+  --clr-gray: #93989f;
+  --clr-gray-100: hsl(215 6% 60% / 0.1);
+  --clr-yellow: #fdf25a;
+  --clr-white: #ffffff;
+  --clr-overlay: hsl(0 0% 18% / 0.8);
+  --clr-overlay-700: hsl(0 0% 18% / 0.6);
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/src/assets/fonts/Helvetica\ Neue\ LT\ 45\ Light.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/src/assets/fonts/Helvetica\ Neue\ LT\ 46\ Light\ Italic.woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/src/assets/fonts/Helvetica\ Neue\ LT\ 65\ Medium.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/src/assets/fonts/Helvetica\ Neue\ LT\ 66\ Medium\ Italic.woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+body {
+  font-family: var(--ff-normal);
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.8125rem;
+}
+
+h3 {
+  font-size: 3.4375rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.0625rem;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--container-width, 80em);
+  padding: 0 50px;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.text-yellow {
+  color: var(--clr-yellow);
+}
+
+.text-gray {
+  color: var(--clr-gray);
+}
+
+.text-white {
+  color: var(--clr-white);
+}
+
+.text-dark {
+  color: var(--clr-dark);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--clr-gray);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.space-vertical {
+  padding: 0 0 50px 0;
+}
+
+.button-small {
+  padding: var(--btn-vrt-padd, 0.75rem) var(--btn-inl-padd, 3rem);
+  font-size: 1.0625rem;
+  text-decoration: none;
+  color: #464c59;
+  background-color: #fdf25a;
+}
+.logo {
+  max-width: 85px
+}

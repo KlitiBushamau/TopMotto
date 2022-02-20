@@ -1,0 +1,119 @@
+.header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px min(100px, 5vw);
+    background-color: #ffffff;
+  }
+  
+  .header > div:first-child {
+    --gap: min(6rem, 5vw);
+  }
+  
+  .navigation {
+    --gap: 2rem;
+    list-style: none;
+  }
+  
+  .navigation > li > a {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--clr-gray);
+  }
+  
+  .navigation > li > a[aria-selected="true"] {
+    color: var(--clr-dark);
+  }
+  
+  .navigation > li > a:hover {
+    color: var(--clr-dark);
+  }
+  
+  .contact {
+    --gap: 3rem;
+  }
+  
+  .contact a {
+    --gap: 1rem;
+    text-decoration: none;
+    text-decoration: uppercase;
+    align-items: center;
+  }
+  
+  .contact a:first-child div:first-child {
+    background-color: var(--clr-gray);
+    width: 45px;
+    height: 45px;
+  }
+  
+  .contact a:last-child div:first-child {
+    background-color: var(--clr-yellow);
+    width: 45px;
+    height: 45px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .details span:first-child {
+    color: var(--clr-gray);
+  }
+  
+  .details span {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 1024px) {
+    .contact {
+      display: none !important;
+    }
+  
+    .mobile {
+      justify-content: space-between;
+    }
+  
+    .header > div:first-child {
+      flex-grow: 1;
+    }
+  
+    .header > div:first-child > div:first-of-type {
+      display: flex;
+      align-items: center;
+    }
+  
+    .navigation {
+      --gap: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .overlay__container {
+      width: 100% !important;
+      padding: 0 30px;
+    }
+  
+    .overlay__content {
+      width: 100%;
+    }
+  
+    .overlay__content h2 {
+      font-size: 1.5rem !important;
+    }
+  
+    .overlay__content h1 {
+      font-size: 3rem;
+    }
+  
+    .header > div:first-child {
+      flex-grow: 0;
+    }
+    .header > div:first-child > div:first-of-type img {
+      width: 70px;
+    }
+  }
